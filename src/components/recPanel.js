@@ -234,7 +234,7 @@ export default function RecPanel() {
                         <div className='py-8 px-5 bg-white border-b shadow-sm'>
                             <h4 className='font-bold text-xl'>{t("recommendation")}</h4>
                         </div>
-                        <div className='overflow-y-auto h-full flex flex-col gap-2 flex-1 px-5 py-5 bg-[#f7f7f7] min-w-80'>
+                        <div className='overflow-y-auto h-full max-md:max-h-[400px] flex flex-col gap-2 flex-1 px-5 py-5 bg-[#f7f7f7] min-w-80'>
                             {recommendations.map((a) => (
                                 <button key={a.tittle} onClick={() => RecRightBar(a)} className='w-full bg-[#f6f6f6] min-h-8 h-8 flex items-center rounded-xl overflow-hidden gap-5 shadow'>
                                     <div className='h-full w-10 min-w-10 bg-blue-500'></div>
