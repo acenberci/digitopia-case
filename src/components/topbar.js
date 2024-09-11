@@ -21,7 +21,7 @@ export default function TopBar() {
                 <div className=' h-full py-[12px] px-[6px]'>
                     <div className='border-l-[2px] border-solid border-[rgb(153,153,153)] h-full'></div>
                 </div>
-                <button onClick={() => router.push(`/${router.locale}/charts`)} className={`p-[15px] hover:scale-[110%] hover:brightness-105 ${path === "/charts" && " text-blue-500"}`}>
+                <button onClick={() => window.location.href = `/${router.locale}/charts`} className={`p-[15px] hover:scale-[110%] hover:brightness-105 ${path === "/charts" && " text-blue-500"}`}>
                     <ChartBarIcon className='size-[24px]'></ChartBarIcon>
                 </button>
             </div>

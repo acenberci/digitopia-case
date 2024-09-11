@@ -274,14 +274,18 @@ const GanttChart = ({ tasks }) => {
 
   useEffect(() => {
     createGanttChart();
+
     const handleResize = () => {
       createGanttChart();
     };
+
     window.addEventListener('resize', handleResize);
+
     return () => {
       window.removeEventListener('resize', handleResize);
     };
   }, [tasks]);
+
 
   return (
     <svg className='rounded-2xl border transition-all duration-500' ref={chartRef}></svg>

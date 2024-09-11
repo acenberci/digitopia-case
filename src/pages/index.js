@@ -29,7 +29,7 @@ export default function Home() {
           children: (
             <div className='flex justify-between px-[25px] pt-1'>
               <h4 className="bg-gradient-to-r from-[#f3b3f0] to-[#758ef0] greetingsText inline text-2xl font-bold">{t('hello')} {userDetails.name}</h4>
-              <button onClick={() => router.push(`/${router.locale}/charts`)} className="bg-gradient-to-r from-[#f3b3f0] to-[#758ef0] hover:brightness-110 border rounded-md py-1 px-2 text-white shadow-sm flex text-center items-center gap-1 text-[1.25rem]">Charts<ChartBarIcon className='size-5' /></button>
+              <button onClick={() => window.location.href = `/${router.locale}/charts`} className="bg-gradient-to-r from-[#f3b3f0] to-[#758ef0] hover:brightness-110 border rounded-md py-1 px-2 text-white shadow-sm flex text-center items-center gap-1 text-[1.25rem]">Charts<ChartBarIcon className='size-5' /></button>
             </div>
           ),
         },
@@ -51,7 +51,7 @@ export default function Home() {
       <main className='mt-[65px] h-[calc(100vh-65px)] bg-[#f4f4f4]'>
         <div className='flex justify-between px-[25px] pt-1'>
           <h4 className="bg-gradient-to-r from-[#f3b3f0] to-[#758ef0] greetingsText inline text-2xl font-bold">{t('hello')} {userDetails.name}</h4>
-          <button onClick={() => router.push(`/${router.locale}/charts`)} className="bg-gradient-to-r from-[#f3b3f0] to-[#758ef0] hover:brightness-110 border rounded-md py-1 px-2 text-white shadow-sm flex text-center items-center gap-1 text-[1.25rem]">Charts<ChartBarIcon className='size-5' /></button>
+          <button onClick={() => window.location.href = `/${router.locale}/charts`} className="bg-gradient-to-r from-[#f3b3f0] to-[#758ef0] hover:brightness-110 border rounded-md py-1 px-2 text-white shadow-sm flex text-center items-center gap-1 text-[1.25rem]">Charts<ChartBarIcon className='size-5' /></button>
         </div>
         <div className='px-[25px] pt-1'>
           <button onClick={() => changeLanguage()} className=' text-gray-500 hover:text-gray-800 relative'><img src={`/images/icons/locales/${router.locale}flag.png`} alt="" className=' h-5 absolute top-0 right-0' /> <GlobeAltIcon className='size-14'></GlobeAltIcon></button>
